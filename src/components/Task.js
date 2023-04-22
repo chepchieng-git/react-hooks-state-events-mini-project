@@ -19,8 +19,9 @@ import React, {useState} from "react";
 
 function Task() {
   const [task, onDeleteTask] = useState("")
-  function handleDeleteClick() {
-    onDeleteTask(task);
+  
+  function handleDeleteClick(id) {
+    onDeleteTask(id);
   }
 
   return (

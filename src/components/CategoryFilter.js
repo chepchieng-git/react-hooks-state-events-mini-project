@@ -5,7 +5,7 @@ function CategoryFilter({categories, onSelectCategory}) {
   const [selectedCategory, setSelectedCategory] = useState("All")
 
   function handleClick(e) {
-    const category = e.target.value
+    const category = e.target.getAttribute("data-category")
     setSelectedCategory(category)
     onSelectCategory(category)
   }
